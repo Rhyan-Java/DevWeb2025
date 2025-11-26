@@ -1,64 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Rhyan Franca</title>
+    <title>Portfólio - Rhyan Franca</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Poppins", Arial, sans-serif;
+            background-color: rgb(0, 15, 37);
+            margin: 0;
+            padding: 0;
         }
-        body {
-            background-color:rgb(0, 15, 37)
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 0 15px rgba(0, 185, 176, 0.2);
         }
 
         h1, h2 {
-            color:rgb(0, 185, 176)
+            color: rgb(0, 185, 176);
+            text-align: center;
         }
 
         p {
-            color:white
+            color: white;
+            line-height: 1.6;
         }
 
         .foto {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            border: 5px solid rgb(0, 185, 176);
+            border: 4px solid rgb(0, 185, 176);
             display: block;
-            margin: 20px auto;         
+            margin: 20px auto;
             object-fit: cover;
+            transition: 0.3s;
         }
-        
+
+        .foto:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgb(0, 185, 176);
+        }
+
+        .secao {
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        a {
+            color: rgb(0, 185, 176);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
-    <img src="MinhaFoto.jpeg" alt="Foto de Rhyan Franca" class="foto">
 
-    <h1> &star; Rhyan Franca Borsoneli Silva</h1>
+    <div class="container">
 
-    <h2> &check; Quem sou eu?</h2>
-    <p> Meu nome é Rhyan Franca Borsoneli Silva,
-        sou aluno de TADS na Faesa, e no futuro, pretendo ser um desenvolvedor web e sou
-        apaixonado por jogos digitais.
-    </p>
-    <p> Pretendo adquirir conhecimento sobre
-        desenvolvimento web, criar meus próprios sites,
-        e aprender a criar meus próprios jogos.
-    </p>
+        <img src="MinhaFoto.jpeg" alt="Foto de Rhyan Franca" class="foto">
 
-    <h2> &check; Habilidades</h2>
-    <p>Python - Java Básico - Inglês Básico</p>
+        <h1>★ Rhyan Franca Borsoneli Silva</h1>
 
-    <h2> &check; Redes Sociais</h2>
-    <p>Facebook: Rhyan Silva</p>
-    <p>Instagram: rhyan_silvaa</p>
-    <p>Linkedin: Rhyan Franca</p>
+        <div class="secao">
+            <h2>✔ Quem sou eu?</h2>
+            <p>Meu nome é Rhyan Franca Borsoneli Silva.
+                Sou aluno de TADS na Faesa e pretendo me tornar desenvolvedor web. 
+                Sou apaixonado por jogos digitais e sempre busco aprender mais.</p>
 
-    <h2> &check; Contatos</h2>
-    <p>Telefone: 27 99856-5710</p>
-    <p>Email: rhyanfrancaborsoneli093@gmail.com</p>
-    
+            <p>Quero desenvolver sites, adquirir experiência prática e,
+                no futuro, criar meus próprios jogos.</p>
+        </div>
+
+        <div class="secao">
+            <h2>✔ Habilidades</h2>
+            <p>Python • Java Básico • Inglês Básico</p>
+        </div>
+
+        <div class="secao">
+            <h2>✔ Redes Sociais</h2>
+            <p><a href="#" target="_blank">Facebook: Rhyan Silva</a></p>
+            <p><a href="#" target="_blank">Instagram: @rhyan_silvaa</a></p>
+            <p><a href="#" target="_blank">LinkedIn: Rhyan Franca</a></p>
+        </div>
+
+        <div class="secao">
+            <h2>✔ Contatos</h2>
+            <p>Telefone: (27) 99856-5710</p>
+            <p>Email: <a href="mailto:rhyanfrancaborsoneli093@gmail.com">rhyanfrancaborsoneli093@gmail.com</a></p>
+        </div>
+
+    </div>
+
 </body>
 </html>
